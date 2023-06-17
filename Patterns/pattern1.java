@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class pattern1 {
 
@@ -7,7 +6,6 @@ public class pattern1 {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
 
-        int arr[] = new int[100];
         System.out.println("Enter the size : ");
         int n = Integer.parseInt(br.readLine());
 

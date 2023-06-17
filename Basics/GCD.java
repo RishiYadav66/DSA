@@ -10,7 +10,7 @@ public class GCD {
         System.out.println("Enter the Second Number");
         int b = Integer.parseInt(br.readLine());
         int gcd = 1;
-        for (int i = 1; i < Math.min(a, b); i++) {
+        for (int i = 1; i <= Math.min(a, b); i++) {
             if (a % i == 0 && b % i == 0) {
                 gcd = i;
             }
