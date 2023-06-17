@@ -392,7 +392,7 @@ public class pattern1 {
                     System.out.print(n - 1 + "  ");
 
                 } else {
-                    System.out.print(n - j~ + "   ");
+                    System.out.print(n - j - 1 + "  ");
                 }
             }
             System.out.println("");
