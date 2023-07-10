@@ -1,7 +1,6 @@
 package Array.Easy;
 
 import java.io.*;
-import java.util.*;
 
 public class AppearOnce {
 

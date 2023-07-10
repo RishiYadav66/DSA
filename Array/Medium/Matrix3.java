@@ -1,8 +1,9 @@
-package Array.Easy;
+package Array.Medium;
 
 import java.io.*;
+import java.util.*;
 
-public class CheckSort {
+public class Matrix3 {
 
     public static void main(String[] args) throws IOException {
         InputStreamReader isr = new InputStreamReader(System.in);
@@ -14,20 +15,6 @@ public class CheckSort {
         System.out.println("Enter the elements");
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(br.readLine());
-        }
-        boolean sorted = true;
-        for (int i = 0; i < n - 1; i++) {
-            if (arr[i] <= arr[i + 1]) {
-                continue;
-            } else {
-                sorted = false;
-                break;
-            }
-        }
-        if (sorted == true) {
-            System.out.println("Sorted");
-        } else {
-            System.out.println("Not sorted");
         }
 
     }

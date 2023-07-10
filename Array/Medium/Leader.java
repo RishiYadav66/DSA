@@ -1,8 +1,9 @@
-package Array.Easy;
+package Array.Medium;
 
 import java.io.*;
+import java.util.*;
 
-public class CheckSort {
+public class Leader {
 
     public static void main(String[] args) throws IOException {
         InputStreamReader isr = new InputStreamReader(System.in);
@@ -15,20 +16,21 @@ public class CheckSort {
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(br.readLine());
         }
-        boolean sorted = true;
-        for (int i = 0; i < n - 1; i++) {
-            if (arr[i] <= arr[i + 1]) {
-                continue;
-            } else {
-                sorted = false;
-                break;
+
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        int max = arr[n - 1];
+        temp.add(max);
+        for (int i = n - 1; i >= 0; i--) {
+            if (arr[i] > max) {
+                max = arr[i];
+                temp.add(arr[i]);
             }
-        }
-        if (sorted == true) {
-            System.out.println("Sorted");
-        } else {
-            System.out.println("Not sorted");
+
         }
 
+        System.out.println("Leaders : ");
+        for (int i : temp) {
+            System.out.println(i);
+        }
     }
 }

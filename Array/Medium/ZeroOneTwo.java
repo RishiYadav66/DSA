@@ -1,7 +1,6 @@
 package Array.Medium;
 
 import java.io.*;
-import java.util.*;
 
 public class ZeroOneTwo {
 

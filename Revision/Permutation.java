@@ -1,10 +1,10 @@
-package Array.Medium;
+package Revision;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.*;
 
-public class AllPermutations {
+public class Permutation {
+
     static void swap(int arr[], int x, int y) {
         int temp = arr[x];
         arr[x] = arr[y];
@@ -27,6 +27,7 @@ public class AllPermutations {
     public static void main(String[] args) throws IOException {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
+
         System.out.println("Enter the size of array");
         int n = Integer.parseInt(br.readLine());
         int arr[] = new int[n];
@@ -34,9 +35,7 @@ public class AllPermutations {
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(br.readLine());
         }
-        Arrays.sort(arr);
 
         permutations(arr, 0);
-
     }
 }
